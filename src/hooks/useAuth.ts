@@ -1,4 +1,5 @@
-import { useState, useEffect, createContext, useContext } from 'react';
+// 1. เพิ่ม useCallback เข้าไปในการ import จาก react
+import { useState, useEffect, createContext, useContext, useCallback } from 'react';
 import { User } from '../types';
 
 interface AuthContextType {
@@ -36,7 +37,8 @@ export const useAuthProvider = () => {
     return () => clearTimeout(timer);
   }, []);
 
-  const login = async (email: string, password: string) => {
+  // 2. ครอบฟังก์ชัน login ด้วย useCallback
+  const login = useCallback(async (email: string, password: string) => {
     setIsLoading(true);
     // Simulate API call
     await new Promise(resolve => setTimeout(resolve, 1000));
@@ -52,12 +54,13 @@ export const useAuthProvider = () => {
     setUser(mockUser);
     localStorage.setItem('scg_user', JSON.stringify(mockUser));
     setIsLoading(false);
-  };
+  }, []); // <-- dependency array ให้เป็นค่าว่าง
 
-  const logout = () => {
+  // 3. ครอบฟังก์ชัน logout ด้วย useCallback
+  const logout = useCallback(() => {
     setUser(null);
     localStorage.removeItem('scg_user');
-  };
+  }, []); // <-- dependency array ให้เป็นค่าว่าง
 
   return {
     user,
