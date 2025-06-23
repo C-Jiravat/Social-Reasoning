@@ -1,9 +1,11 @@
 import React, { useState, useEffect, createContext, useContext, useCallback, ReactNode } from 'react';
 import { User } from '../types';
 
+// 1. เพิ่มฟังก์ชัน register ใน Context Type
 interface AuthContextType {
   user: User | null;
   login: (email: string, password: string) => Promise<void>;
+  register: (name: string, email: string, password: string) => Promise<void>; // เพิ่มฟังก์ชัน register
   logout: () => void;
   isLoading: boolean;
 }
@@ -23,12 +25,10 @@ export const AuthProvider = ({ children }: { children: ReactNode }) => {
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    // ตรวจสอบ user ที่เคยล็อกอินค้างไว้ตอนเปิดแอปครั้งแรก
     const savedUser = localStorage.getItem('scg_user');
     if (savedUser) {
       setUser(JSON.parse(savedUser));
     }
-    // ตั้งค่า isLoading เป็น false เมื่อตรวจสอบเสร็จแล้ว
     setIsLoading(false);
   }, []);
 
@@ -45,17 +45,27 @@ export const AuthProvider = ({ children }: { children: ReactNode }) => {
     };
     
     localStorage.setItem('scg_user', JSON.stringify(mockUser));
-    setUser(mockUser); // อัปเดต state
+    setUser(mockUser);
+    setIsLoading(false);
+  }, []);
+
+  // 2. สร้างฟังก์ชัน register (จำลอง)
+  const register = useCallback(async (name: string, email: string, password: string) => {
+    setIsLoading(true);
+    // ในสถานการณ์จริง, ส่วนนี้จะเรียก API ของ Supabase เพื่อสร้างผู้ใช้ใหม่
+    await new Promise(resolve => setTimeout(resolve, 1500)); 
+    console.log('User registered (mock):', { name, email, password });
+    // ไม่มีการตั้งค่า user ที่นี่; ผู้ใช้จะต้องล็อกอินหลังลงทะเบียน
     setIsLoading(false);
   }, []);
 
   const logout = useCallback(() => {
     localStorage.removeItem('scg_user');
-    setUser(null); // อัปเดต state
+    setUser(null);
   }, []);
 
-  // สร้าง value object ที่จะส่งให้ Provider
-  const value = { user, login, logout, isLoading };
+  // 3. ส่งฟังก์ชัน register ไปกับ value
+  const value = { user, login, register, logout, isLoading };
 
   return (
     <AuthContext.Provider value={value}>
