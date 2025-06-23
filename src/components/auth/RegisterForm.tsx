@@ -3,6 +3,7 @@
 /**
  * สร้างไฟล์ใหม่: src/components/auth/RegisterForm.tsx
  */
+import React, { useState } from 'react';
 import { User, Mail, Lock, Eye, EyeOff } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 import { useAuth } from '../../hooks/useAuth';
