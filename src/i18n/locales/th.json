@@ -1,0 +1,153 @@
+{
+  "common": {
+    "loading": "กำลังโหลด...",
+    "save": "บันทึก",
+    "cancel": "ยกเลิก",
+    "delete": "ลบ",
+    "edit": "แก้ไข",
+    "view": "ดู",
+    "close": "ปิด",
+    "confirm": "ยืนยัน",
+    "search": "ค้นหา",
+    "filter": "กรอง",
+    "export": "ส่งออก",
+    "refresh": "รีเฟรช"
+  },
+  "auth": {
+    "welcome": "ยินดีต้อนรับกลับมา",
+    "signIn": "เข้าสู่ระบบ Social Crisis Guardian",
+    "email": "อีเมล",
+    "password": "รหัสผ่าน",
+    "signInButton": "เข้าสู่ระบบ",
+    "signingIn": "กำลังเข้าสู่ระบบ...",
+    "demoCredentials": "ข้อมูลทดสอบ: อีเมลและรหัสผ่านใดก็ได้",
+    "logout": "ออกจากระบบ",
+    "enterEmail": "กรอกอีเมลของคุณ",
+    "enterPassword": "กรอกรหัสผ่านของคุณ"
+  },
+  "navigation": {
+    "dashboard": "แดชบอร์ด",
+    "alerts": "การแจ้งเตือนที่ใช้งานอยู่",
+    "analytics": "การวิเคราะห์",
+    "monitoring": "การตรวจสอบ",
+    "accounts": "บัญชีโซเชียลมีเดีย",
+    "trends": "แนวโน้ม",
+    "notifications": "การแจ้งเตือน",
+    "settings": "การตั้งค่า"
+  },
+  "dashboard": {
+    "title": "Social Crisis Guardian",
+    "subtitle": "ตรวจสอบและตอบสนองต่อวิกฤตโซเชียลมีเดียแบบเรียลไทม์",
+    "totalComments": "ความคิดเห็นทั้งหมด",
+    "activeAlerts": "การแจ้งเตือนที่ใช้งานอยู่",
+    "monitoredAccounts": "บัญชีที่ตรวจสอบ",
+    "totalReach": "การเข้าถึงทั้งหมด",
+    "sentimentTrends": "แนวโน้มความรู้สึก (7 วัน)",
+    "sentimentDistribution": "การกระจายความรู้สึก",
+    "recentAlerts": "การแจ้งเตือนล่าสุด",
+    "recentComments": "ความคิดเห็นล่าสุด",
+    "allClear": "ทุกอย่างปกติ!",
+    "noActiveAlerts": "ไม่มีการแจ้งเตือนที่ใช้งานอยู่ในขณะนี้",
+    "activePlatforms": "แพลตฟอร์มที่ใช้งานอยู่"
+  },
+  "alerts": {
+    "title": "การแจ้งเตือนที่ใช้งานอยู่",
+    "subtitle": "ตรวจสอบและจัดการการแจ้งเตือนวิกฤตในบัญชีโซเชียลมีเดียของคุณ",
+    "allAlerts": "การแจ้งเตือนทั้งหมด",
+    "critical": "วิกฤต",
+    "high": "สูง",
+    "active": "ใช้งานอยู่",
+    "resolved": "แก้ไขแล้ว",
+    "viewDetails": "ดูรายละเอียด",
+    "goToPost": "ไปที่โพสต์",
+    "markResolved": "ทำเครื่องหมายว่าแก้ไขแล้ว",
+    "markRead": "ทำเครื่องหมายว่าอ่านแล้ว",
+    "relatedComments": "ความคิดเห็นที่เกี่ยวข้อง:",
+    "moreComments": "ความคิดเห็นเพิ่มเติม"
+  },
+  "analytics": {
+    "title": "แดชบอร์ดการวิเคราะห์",
+    "subtitle": "ข้อมูลเชิงลึกที่ครอบคลุมเกี่ยวกับความรู้สึกและการมีส่วนร่วมในโซเชียลมีเดีย",
+    "positiveRate": "อัตราเชิงบวก",
+    "negativeRate": "อัตราเชิงลบ",
+    "highRiskComments": "ความคิดเห็นความเสี่ยงสูง",
+    "weeklyCommentVolume": "ปริมาณความคิดเห็นรายสัปดาห์",
+    "hateSpeechRiskDistribution": "การกระจายความเสี่ยงคำพูดแสดงความเกลียดชัง",
+    "dailySentimentBreakdown": "การแบ่งความรู้สึกรายวัน",
+    "total": "ทั้งหมด",
+    "positive": "เชิงบวก",
+    "neutral": "เป็นกลาง",
+    "negative": "เชิงลบ"
+  },
+  "monitoring": {
+    "title": "แดชบอร์ดการตรวจสอบ",
+    "subtitle": "สถานะการตรวจสอบแบบเรียลไทม์ของบัญชีโซเชียลมีเดียที่เชื่อมต่อ",
+    "monitoringStatus": "สถานะการตรวจสอบ",
+    "systemActive": "ระบบทำงานอยู่",
+    "refreshAll": "รีเฟรชทั้งหมด",
+    "activeAccounts": "บัญชีที่ใช้งานอยู่",
+    "syncInterval": "ช่วงเวลาซิงค์",
+    "uptime": "เวลาทำงาน",
+    "connectedAccounts": "บัญชีที่เชื่อมต่อ",
+    "followers": "ผู้ติดตาม",
+    "lastSync": "ซิงค์ล่าสุด:",
+    "commentsToday": "ความคิดเห็นวันนี้",
+    "pause": "หยุดชั่วคราว",
+    "resume": "ดำเนินการต่อ"
+  },
+  "settings": {
+    "title": "การตั้งค่า",
+    "subtitle": "กำหนดค่าการแจ้งเตือนและเกณฑ์การแจ้งเตือนของคุณ",
+    "notificationChannels": "ช่องทางการแจ้งเตือน",
+    "emailNotifications": "การแจ้งเตือนทางอีเมล",
+    "emailDescription": "รับการแจ้งเตือนทางอีเมล",
+    "lineNotify": "LINE Notify",
+    "lineDescription": "ส่งการแจ้งเตือนไปยัง LINE แชท",
+    "discordWebhook": "Discord Webhook",
+    "discordDescription": "โพสต์การแจ้งเตือนไปยังช่อง Discord",
+    "alertPreferences": "การตั้งค่าการแจ้งเตือน",
+    "realTimeAlerts": "การแจ้งเตือนแบบเรียลไทม์",
+    "realTimeDescription": "การแจ้งเตือนทันทีสำหรับปัญหาวิกฤต",
+    "dailySummary": "สรุปรายวัน",
+    "dailySummaryDescription": "สรุปกิจกรรมประจำวัน",
+    "hateSpeechThreshold": "เกณฑ์ความเสี่ยงคำพูดแสดงความเกลียดชัง",
+    "sentimentThreshold": "เกณฑ์ความรู้สึกเชิงลบ",
+    "enabled": "เปิดใช้งาน",
+    "disabled": "ปิดใช้งาน",
+    "connected": "เชื่อมต่อแล้ว",
+    "notConnected": "ไม่ได้เชื่อมต่อ",
+    "saveSettings": "บันทึกการตั้งค่า",
+    "lowSensitive": "ต่ำ - แจ้งเตือนเมื่อตรวจพบความเสี่ยงใดๆ",
+    "mediumSensitive": "ปานกลาง - แจ้งเตือนเมื่อความเสี่ยงปานกลางหรือสูง",
+    "highSensitive": "สูง - แจ้งเตือนเฉพาะความเสี่ยงสูงเท่านั้น",
+    "verySensitive": "ไวมาก",
+    "lessSensitive": "ไวน้อย"
+  },
+  "sentiment": {
+    "positive": "เชิงบวก",
+    "neutral": "เป็นกลาง",
+    "negative": "เชิงลบ"
+  },
+  "risk": {
+    "none": "ไม่มี",
+    "low": "ความเสี่ยงต่ำ",
+    "medium": "ความเสี่ยงปานกลาง",
+    "high": "ความเสี่ยงสูง"
+  },
+  "severity": {
+    "low": "ต่ำ",
+    "medium": "ปานกลาง",
+    "high": "สูง",
+    "critical": "วิกฤต"
+  },
+  "platforms": {
+    "facebook": "Facebook",
+    "twitter": "Twitter"
+  },
+  "time": {
+    "ago": "ที่แล้ว",
+    "minutesAgo": "{{count}} นาทีที่แล้ว",
+    "hoursAgo": "{{count}} ชั่วโมงที่แล้ว",
+    "daysAgo": "{{count}} วันที่แล้ว"
+  }
+}

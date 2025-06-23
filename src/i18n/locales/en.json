@@ -1,0 +1,153 @@
+{
+  "common": {
+    "loading": "Loading...",
+    "save": "Save",
+    "cancel": "Cancel",
+    "delete": "Delete",
+    "edit": "Edit",
+    "view": "View",
+    "close": "Close",
+    "confirm": "Confirm",
+    "search": "Search",
+    "filter": "Filter",
+    "export": "Export",
+    "refresh": "Refresh"
+  },
+  "auth": {
+    "welcome": "Welcome Back",
+    "signIn": "Sign in to Social Crisis Guardian",
+    "email": "Email Address",
+    "password": "Password",
+    "signInButton": "Sign In",
+    "signingIn": "Signing in...",
+    "demoCredentials": "Demo credentials: any email and password",
+    "logout": "Logout",
+    "enterEmail": "Enter your email",
+    "enterPassword": "Enter your password"
+  },
+  "navigation": {
+    "dashboard": "Dashboard",
+    "alerts": "Active Alerts",
+    "analytics": "Analytics",
+    "monitoring": "Monitoring",
+    "accounts": "Social Accounts",
+    "trends": "Trends",
+    "notifications": "Notifications",
+    "settings": "Settings"
+  },
+  "dashboard": {
+    "title": "Social Crisis Guardian",
+    "subtitle": "Monitor and respond to social media crises in real-time",
+    "totalComments": "Total Comments",
+    "activeAlerts": "Active Alerts",
+    "monitoredAccounts": "Monitored Accounts",
+    "totalReach": "Total Reach",
+    "sentimentTrends": "Sentiment Trends (7 Days)",
+    "sentimentDistribution": "Sentiment Distribution",
+    "recentAlerts": "Recent Alerts",
+    "recentComments": "Recent Comments",
+    "allClear": "All clear!",
+    "noActiveAlerts": "No active alerts at the moment.",
+    "activePlatforms": "Active Platforms"
+  },
+  "alerts": {
+    "title": "Active Alerts",
+    "subtitle": "Monitor and manage crisis alerts across your social media accounts",
+    "allAlerts": "All Alerts",
+    "critical": "Critical",
+    "high": "High",
+    "active": "Active",
+    "resolved": "Resolved",
+    "viewDetails": "View Details",
+    "goToPost": "Go to Post",
+    "markResolved": "Mark Resolved",
+    "markRead": "Mark Read",
+    "relatedComments": "Related Comments:",
+    "moreComments": "more comments"
+  },
+  "analytics": {
+    "title": "Analytics Dashboard",
+    "subtitle": "Comprehensive insights into your social media sentiment and engagement",
+    "positiveRate": "Positive Rate",
+    "negativeRate": "Negative Rate",
+    "highRiskComments": "High Risk Comments",
+    "weeklyCommentVolume": "Weekly Comment Volume",
+    "hateSpeechRiskDistribution": "Hate Speech Risk Distribution",
+    "dailySentimentBreakdown": "Daily Sentiment Breakdown",
+    "total": "total",
+    "positive": "Positive",
+    "neutral": "Neutral",
+    "negative": "Negative"
+  },
+  "monitoring": {
+    "title": "Monitoring Dashboard",
+    "subtitle": "Real-time monitoring status of your connected social media accounts",
+    "monitoringStatus": "Monitoring Status",
+    "systemActive": "System Active",
+    "refreshAll": "Refresh All",
+    "activeAccounts": "Active Accounts",
+    "syncInterval": "Sync Interval",
+    "uptime": "Uptime",
+    "connectedAccounts": "Connected Accounts",
+    "followers": "followers",
+    "lastSync": "Last sync:",
+    "commentsToday": "Comments Today",
+    "pause": "Pause",
+    "resume": "Resume"
+  },
+  "settings": {
+    "title": "Settings",
+    "subtitle": "Configure your notification preferences and alert thresholds",
+    "notificationChannels": "Notification Channels",
+    "emailNotifications": "Email Notifications",
+    "emailDescription": "Receive alerts via email",
+    "lineNotify": "LINE Notify",
+    "lineDescription": "Send alerts to LINE chat",
+    "discordWebhook": "Discord Webhook",
+    "discordDescription": "Post alerts to Discord channel",
+    "alertPreferences": "Alert Preferences",
+    "realTimeAlerts": "Real-time Alerts",
+    "realTimeDescription": "Immediate notifications for critical issues",
+    "dailySummary": "Daily Summary",
+    "dailySummaryDescription": "Daily digest of all activity",
+    "hateSpeechThreshold": "Hate Speech Risk Threshold",
+    "sentimentThreshold": "Negative Sentiment Threshold",
+    "enabled": "Enabled",
+    "disabled": "Disabled",
+    "connected": "Connected",
+    "notConnected": "Not Connected",
+    "saveSettings": "Save Settings",
+    "lowSensitive": "Low - Alert on any risk detected",
+    "mediumSensitive": "Medium - Alert on medium or high risk",
+    "highSensitive": "High - Alert only on high risk",
+    "verySensitive": "Very Sensitive",
+    "lessSensitive": "Less Sensitive"
+  },
+  "sentiment": {
+    "positive": "Positive",
+    "neutral": "Neutral",
+    "negative": "Negative"
+  },
+  "risk": {
+    "none": "None",
+    "low": "Low Risk",
+    "medium": "Medium Risk",
+    "high": "High Risk"
+  },
+  "severity": {
+    "low": "LOW",
+    "medium": "MEDIUM",
+    "high": "HIGH",
+    "critical": "CRITICAL"
+  },
+  "platforms": {
+    "facebook": "Facebook",
+    "twitter": "Twitter"
+  },
+  "time": {
+    "ago": "ago",
+    "minutesAgo": "{{count}}m ago",
+    "hoursAgo": "{{count}}h ago",
+    "daysAgo": "{{count}}d ago"
+  }
+}
