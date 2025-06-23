@@ -1,5 +1,6 @@
-import React, { useState, createContext } from 'react';
-import { useAuthProvider, AuthContext, useAuth } from './hooks/useAuth'; // เพิ่ม useAuth เข้ามา
+import React, { useState } from 'react';
+// 1. ลบ AuthContext และ useAuthProvider ออกจากการ import
+import { useAuth } from './hooks/useAuth';
 import { LoginForm } from './components/auth/LoginForm';
 import { LoadingSpinner } from './components/ui/LoadingSpinner';
 import { Sidebar } from './components/layout/Sidebar';
@@ -10,9 +11,10 @@ import { AnalyticsView } from './components/views/AnalyticsView';
 import { MonitoringView } from './components/views/MonitoringView';
 import { SettingsView } from './components/views/SettingsView';
 
+// AppContent ยังคงเหมือนเดิม แต่ตอนนี้จะดึง state จาก AuthProvider ที่ครอบอยู่
 function AppContent() {
   const [activeTab, setActiveTab] = useState('dashboard');
-  const { user, isLoading } = useAuth(); // เปลี่ยนจาก useAuthProvider() เป็น useAuth()
+  const { user, isLoading } = useAuth();
 
   if (isLoading) {
     return (
@@ -53,14 +55,9 @@ function AppContent() {
   );
 }
 
+// 2. แก้ไข App component ให้เหลือแค่นี้
 function App() {
-  const auth = useAuthProvider();
-
-  return (
-    <AuthContext.Provider value={auth}>
-      <AppContent />
-    </AuthContext.Provider>
-  );
+  return <AppContent />;
 }
 
 export default App;
